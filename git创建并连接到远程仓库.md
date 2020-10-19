@@ -23,3 +23,18 @@ ssh-keygen -t rsa -C "email@example.com"
 ~/.ssh/id_rsa.pub
 ```
 
+3. fatal: remote origin already exists 错误的解决:
+
+   ```sh
+   # 删除建立的远程仓库连接
+   git remote rm origin
+   ```
+
+4. src refspec master does not match any 错误:
+
+   ```sh
+   # 随便添加一些文件或者改动，然后提交即可
+   # 最后远程提交
+   ```
+
+   
