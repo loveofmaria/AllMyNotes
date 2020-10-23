@@ -37,4 +37,16 @@ ssh-keygen -t rsa -C "email@example.com"
    # 最后远程提交
    ```
 
+5. 对于已经存在的仓库，修改认证方式「ssh-key已经添加后」:
+
+   ```sh
+   # 查看当前的验证方式
+   git remote show origin
+   
+   # 修改验证方式
+   # git remote set-url origin 自己的代码地址，比如
+   git remote set-url origin git@github.com:loveofmaria/AllMyNotes.git
+   git remote set-url origin https://github.com/loveofmaria/AllMyNotes.git
+   ```
+
    
